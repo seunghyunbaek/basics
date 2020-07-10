@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/step4FragmentBtn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="메인" />
+
+    <Button
+        android:id="@+id/step4FragmentBtn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/step4FragmentBtn1"
+        android:text="메뉴" />
+
+    <FrameLayout
+        android:id="@+id/step4MainFragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/step4FragmentBtn1">
+
+        <!--
+        <fragment
+            android:id="@+id/step4MainFragment"
+            android:name="bset.hyun.basics.step4.Step4MainFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+            -->
+
+    </FrameLayout>
+
+</RelativeLayout>

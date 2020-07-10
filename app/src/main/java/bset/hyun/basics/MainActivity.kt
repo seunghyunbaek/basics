@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import bset.hyun.basics.step3.Step3SummaryActivity
+import bset.hyun.basics.step4.Step4MainActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -17,6 +18,10 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        step4_main_btn.setOnClickListener {
+            val intent = Intent(this, Step4MainActivity::class.java)
+            startActivity(intent)
+        }
 
     }
 }

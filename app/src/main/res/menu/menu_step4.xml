@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/step4_menu_refresh"
+        android:title="새로고침"
+        android:icon="@drawable/ic_launcher_foreground" />
+
+    <item
+        android:id="@+id/step4_menu_search"
+        android:title="검색"
+        android:icon="@drawable/ic_launcher_foreground"
+        app:showAsAction="always|withText"
+        app:actionLayout="@layout/step4_search_layout"/>
+
+    <item
+        android:id="@+id/step4_menu_settings"
+        android:title="설정"
+        android:icon="@drawable/ic_launcher_foreground" />
+
+</menu>
