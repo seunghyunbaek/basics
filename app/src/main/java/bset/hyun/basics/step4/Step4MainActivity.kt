@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import bset.hyun.basics.R
+import bset.hyun.basics.step4navigationdrawer.Step4NavigationDrawerActivity
 import kotlinx.android.synthetic.main.activity_step4_main.*
 
 class Step4MainActivity : AppCompatActivity() {
@@ -24,6 +25,21 @@ class Step4MainActivity : AppCompatActivity() {
 
         step4Btn3.setOnClickListener {
             val intent = Intent(this, Step4OptionMenuActivity::class.java)
+            startActivity(intent)
+        }
+
+        step4Btn4.setOnClickListener {
+            val intent = Intent(this, Step4TabActivity::class.java)
+            startActivity(intent)
+        }
+
+        step4Btn5.setOnClickListener {
+            val intent = Intent(this, Step4ViewpagerActivity::class.java)
+            startActivity(intent)
+        }
+
+        step4Btn6.setOnClickListener {
+            val intent = Intent(this, Step4NavigationDrawerActivity::class.java)
             startActivity(intent)
         }
     }

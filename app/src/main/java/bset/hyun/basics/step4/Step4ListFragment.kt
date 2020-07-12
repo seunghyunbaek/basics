@@ -12,7 +12,7 @@ import bset.hyun.basics.R
 class Step4ListFragment : Fragment() {
     var activity: Step4Fragment2Activity? = null
 
-    override fun onAttach(context: Context?) {
+    override fun onAttach(context: Context) {
         super.onAttach(context)
 
         activity = getActivity() as Step4Fragment2Activity

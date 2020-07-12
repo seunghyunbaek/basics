@@ -14,7 +14,7 @@ class Step4MainFragment : Fragment() {
 
     var activity: Step4FragmentActivity? = null
 
-    override fun onAttach(context: Context?) { // 액티비티 위에 올라간다는 의미, onCreate 보다 먼저 호출됨
+    override fun onAttach(context: Context) { // 액티비티 위에 올라간다는 의미, onCreate 보다 먼저 호출됨
         super.onAttach(context)
 
         activity = getActivity() as Step4FragmentActivity

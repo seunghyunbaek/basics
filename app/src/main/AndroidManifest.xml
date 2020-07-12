@@ -9,7 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".step4.Step4OptionMenuActivity"></activity>
+        <activity
+            android:name=".step4navigationdrawer.Step4NavigationDrawerActivity"
+            android:label="@string/title_activity_step4_navigation_drawer"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".step4.Step4ViewpagerActivity" />
+        <activity android:name=".step4.Step4TabActivity" />
+        <activity android:name=".step4.Step4OptionMenuActivity" />
         <activity android:name=".step4.Step4Fragment2Activity" />
         <activity android:name=".step4.Step4FragmentActivity" />
         <activity android:name=".step4.Step4MainActivity" />
