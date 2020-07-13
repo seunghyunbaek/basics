@@ -4,36 +4,38 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".step5.Step5ThreadActivity">
 
     <Button
-        android:id="@+id/step3_main_btn"
+        android:id="@+id/step5ThreadBtn1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="Step3"
+        android:text="스레드 시작"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/step5ThreadText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="진행 값"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/step5ThreadBtn1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/step4_main_btn"
+        android:id="@+id/step5ThreadBtn2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="Step4"
+        android:text="진행 값 확인"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/step3_main_btn" />
+        app:layout_constraintTop_toBottomOf="@+id/step5ThreadBtn1" />
 
-    <Button
-        android:id="@+id/step5_main_btn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="Step5"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/step4_main_btn" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
