@@ -1,19 +1,19 @@
 package bset.hyun.basics.step4navigationdrawer
 
 import android.os.Bundle
-import com.google.android.material.floatingactionbutton.FloatingActionButton
-import com.google.android.material.snackbar.Snackbar
+import android.view.Menu
+import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.widget.Toolbar
+import androidx.drawerlayout.widget.DrawerLayout
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
-import androidx.drawerlayout.widget.DrawerLayout
-import com.google.android.material.navigation.NavigationView
-import androidx.appcompat.app.AppCompatActivity
-import androidx.appcompat.widget.Toolbar
-import android.view.Menu
 import bset.hyun.basics.R
+import com.google.android.material.floatingactionbutton.FloatingActionButton
+import com.google.android.material.navigation.NavigationView
+import com.google.android.material.snackbar.Snackbar
 
 class Step4NavigationDrawerActivity : AppCompatActivity() {
 
@@ -44,17 +44,17 @@ class Step4NavigationDrawerActivity : AppCompatActivity() {
             ), drawerLayout
         )
 
-        setupActionBarWithNavController(navController, appBarConfiguration) // 부분화면이 변경될 때마다 액션바의 타이틀 변경
+        setupActionBarWithNavController(navController, appBarConfiguration) // 부분화면이 변경될 때마다 액션바의 타이틀 변경, 액션바에 햄버거 메뉴버튼 생김
         navView.setupWithNavController(navController) // NavigationView를 NavController가 사용할 수 있도록 설정 ( NavigationView 아이템 클릭시 프래그먼트가 변경되도록 해줌 )
     }
 
-    override fun onCreateOptionsMenu(menu: Menu): Boolean {
+    override fun onCreateOptionsMenu(menu: Menu): Boolean { // OptionMenu 만들기 (우측 상단)
         // Inflate the menu; this adds items to the action bar if it is present.
         menuInflater.inflate(R.menu.step4_navigation_drawer, menu)
         return true
     }
 
-    override fun onSupportNavigateUp(): Boolean {
+    override fun onSupportNavigateUp(): Boolean { // 왼쪽 상단 햄버거 메뉴버튼 작동되도록 함
         val navController = findNavController(R.id.nav_host_fragment)
         return navController.navigateUp(appBarConfiguration) || super.onSupportNavigateUp()
     }

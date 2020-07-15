@@ -6,14 +6,15 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
-        android:usesCleartextTraffic="true"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".step5.Step5JSONActivity"></activity>
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".step5.Step5SummaryActivity"></activity>
+        <activity android:name=".step5.Step5JSONActivity" />
         <activity android:name=".step5.Step5VolleyActivity" />
         <activity android:name=".step5.Step5HttpActivity" />
         <activity android:name=".step5.Step5ClientActivity" />

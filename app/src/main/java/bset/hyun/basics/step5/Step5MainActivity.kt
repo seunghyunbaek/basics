@@ -44,5 +44,10 @@ class Step5MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        step5MainBtn11.setOnClickListener {
+            val intent = Intent(this, Step5SummaryActivity::class.java)
+            startActivity(intent)
+        }
+
     }
 }

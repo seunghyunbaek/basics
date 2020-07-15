@@ -10,7 +10,7 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import bset.hyun.basics.R
 
-class HomeFragment : Fragment() {
+class   HomeFragment : Fragment() {
 
     private lateinit var homeViewModel: HomeViewModel
 
