@@ -13,7 +13,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".step5.Step5SummaryActivity"></activity>
+        <activity android:name=".step6.Step6MainActivity"></activity>
+        <activity android:name=".step5.Step5SummaryActivity" />
         <activity android:name=".step5.Step5JSONActivity" />
         <activity android:name=".step5.Step5VolleyActivity" />
         <activity android:name=".step5.Step5HttpActivity" />

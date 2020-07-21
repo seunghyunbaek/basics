@@ -35,7 +35,8 @@ android {
                             'src/main/res/layouts/step3',
                             'src/main/res/layouts/step4',
                             'src/main/res/layouts/step4/navigationdrawer',
-                            'src/main/res/layouts/step5'
+                            'src/main/res/layouts/step5',
+                            'src/main/res/layouts/step6'
                     ]
         }
     }
