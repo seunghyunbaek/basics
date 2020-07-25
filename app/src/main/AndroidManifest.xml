@@ -13,7 +13,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".step6.Step6DatabaseActivity"></activity>
+        <activity android:name=".step6.Step6DatabaseServiceActivity"></activity>
+        <activity android:name=".step6.Step6ConnectStatusActivity" />
+        <activity android:name=".step6.Step6DatabaseActivity" />
         <activity android:name=".step6.Step6MainActivity" />
         <activity android:name=".step5.Step5SummaryActivity" />
         <activity android:name=".step5.Step5JSONActivity" />
