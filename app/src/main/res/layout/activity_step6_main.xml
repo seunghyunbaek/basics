@@ -7,8 +7,8 @@
     tools:context=".step6.Step6MainActivity">
 
     <Button
-        android:id="@+id/step6_main_btn"
-        android:text="데이터베이스"
+        android:id="@+id/step6MainBtn1"
+        android:text="데이터베이스와 테이블"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toTopOf="parent"
