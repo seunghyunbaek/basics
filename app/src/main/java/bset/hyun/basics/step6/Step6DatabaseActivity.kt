@@ -1,6 +1,7 @@
 package bset.hyun.basics.step6
 
 import android.content.Context
+import android.database.Cursor
 import android.database.sqlite.SQLiteDatabase
 import android.os.Bundle
 import android.widget.Button
@@ -46,10 +47,15 @@ class Step6DatabaseActivity : AppCompatActivity() {
 
             var age = -1
             try {
-                ageStr.toInt()
+                age =  ageStr.toInt()
             } catch (e: Exception) { }
 
             insertData(name, age, mobile)
+        }
+
+        val btn4 = findViewById<Button>(R.id.step6DatabaseBtn4)
+        btn4.setOnClickListener {
+            selectData()
         }
     }
 
@@ -91,6 +97,28 @@ class Step6DatabaseActivity : AppCompatActivity() {
         } else {
             println("먼저 데이터베이스를 오픈하세요")
         }
+    }
 
+    fun selectData() {
+        println("selectData() 호출됨")
+
+        if (database != null) {
+            val sql = "select name, age, mobile from customer"
+            val cursor: Cursor = database!!.rawQuery(sql, null)
+            println("조회된 데이터 개수: ${cursor.count}")
+
+            for(i in 0 until cursor.count) {
+                cursor.moveToNext()
+                val name = cursor.getString(0) // 칼럼 인덱스를 넣어준다.
+                val age = cursor.getInt(1)
+                val mobile = cursor.getString(2)
+
+                println("#$i -> $name, $age, $mobile")
+            }
+
+            // 자원이 한정되어 있기 때문에
+            // cursor라고 하는 것도 실제 데이터베이스 저장소를 접근하기 때문에 웬만하면 마지막에 close를 꼭 해주셔야 합니다.
+            cursor.close()
+        }
     }
 }

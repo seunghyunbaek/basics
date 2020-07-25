@@ -26,3 +26,11 @@
 왜냐하면 앱의 단말에 저장할 데이터는 보통 간단한 형식으로 저장을 합니다. 그래서 그렇게 저장을 하려고 생각을 하니까 SQL문도 복잡한 걸 원하지 않습니다.  
 SQL문을 작성할 때에 띄어쓰기, 콤마 등을 주의해야할 부분입니다.  
   
+  
+# SQL 문  
+테이블 생성  
+CREATE TABLE [IF NOT EXISTS] table_name(col_name col_definition, ...)  
+  
+레코드, 데이터 추가  
+INSERT INTO table_name<(column list)> VALUES (value, ...)  
+  
