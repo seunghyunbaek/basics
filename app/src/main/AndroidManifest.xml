@@ -13,10 +13,12 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
+        <activity android:name=".step6.Step6SummaryActivity"></activity>
+
         <service
             android:name=".step6.Step6DatabaseService"
             android:enabled="true"
-            android:exported="true"></service>
+            android:exported="true" />
 
         <activity android:name=".step6.Step6DatabaseServiceActivity" />
         <activity android:name=".step6.Step6ConnectStatusActivity" />

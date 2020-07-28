@@ -26,5 +26,10 @@ class Step6MainActivity : AppCompatActivity() {
             val intent = Intent(this, Step6DatabaseServiceActivity::class.java)
             startActivity(intent)
         }
+
+        step6MainBtn4.setOnClickListener {
+            val intent = Intent(this, Step6SummaryActivity::class.java)
+            startActivity(intent)
+        }
     }
 }
