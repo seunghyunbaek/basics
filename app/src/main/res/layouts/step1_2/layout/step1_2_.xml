@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/testScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/thumb_up" />
+
+        <View
+            android:id="@+id/button2"
+            android:layout_width="200dp"
+            android:layout_height="120dp"
+            android:background="@drawable/rect_shape" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@drawable/thumbnail_base"></FrameLayout>
+
+        <Button
+            android:id="@+id/testBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/linear_border"
+            android:text="토스트띄우기" />
+
+        <Button
+            android:id="@+id/testBtn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/linear_border"
+            android:text="토스트모양바꾸기" />
+
+        <Button
+            android:id="@+id/testBtn3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/linear_border"
+            android:text="스낵바 띄우기" />
+
+        <Button
+            android:id="@+id/testBtn4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/linear_border"
+            android:text="알림 대화상자 띄우기" />
+
+        <best.hyun.moview.learn1_2.Step1BitmapButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HelloWorld " />
+
+        <Button
+            android:id="@+id/testBtn5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="button" />
+
+        <FrameLayout
+            android:id="@+id/testContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/textBtn6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="button" />
+
+        <ListView
+            android:id="@+id/testListView"
+            android:layout_width="match_parent"
+            android:layout_height="300dp" />
+
+        <TextView
+            android:id="@+id/testsptv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Spinner
+            android:id="@+id/testspinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+</ScrollView>

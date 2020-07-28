@@ -3,6 +3,8 @@ package bset.hyun.basics
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import best.hyun.moview.learn1_2.Step1_2_Activity
+import best.hyun.moview.learn3.Step3MainActivity
 import bset.hyun.basics.step3.Step3SummaryActivity
 import bset.hyun.basics.step4.Step4MainActivity
 import bset.hyun.basics.step5.Step5MainActivity
@@ -15,7 +17,17 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        step1_2_main_btn.setOnClickListener{
+            val intent = Intent(this, Step1_2_Activity::class.java)
+            startActivity(intent)
+        }
+
         step3_main_btn.setOnClickListener{
+            val intent = Intent(this, Step3MainActivity::class.java)
+            startActivity(intent)
+        }
+
+        step3_summary_main_btn.setOnClickListener{
             val intent = Intent(this, Step3SummaryActivity::class.java)
             startActivity(intent)
         }

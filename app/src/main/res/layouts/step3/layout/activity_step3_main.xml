@@ -4,67 +4,77 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".learn3.Step3MainActivity">
 
     <Button
-        android:id="@+id/step1_2_main_btn"
+        android:id="@+id/lrn3_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="Step1_2"
+        android:text="메뉴화면띄우기"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/step3_main_btn"
+    <EditText
+        android:id="@+id/lrn3_edit2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="Step3"
+        android:text="01010001000"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/step1_2_main_btn" />
+        app:layout_constraintTop_toBottomOf="@id/lrn3_btn" />
 
     <Button
-        android:id="@+id/step3_summary_main_btn"
+        android:id="@+id/lrn3_btn2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="Step3 SUMMARY"
+        android:text="전화걸기"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/step3_main_btn" />
+        app:layout_constraintTop_toBottomOf="@id/lrn3_edit2" />
 
 
     <Button
-        android:id="@+id/step4_main_btn"
+        android:id="@+id/lrn3_btn3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="Step4"
+        android:text="화면닫기"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/step3_summary_main_btn" />
+        app:layout_constraintTop_toBottomOf="@id/lrn3_btn2" />
+
+    <EditText
+        android:id="@+id/lrn3_edit4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="소녀시대"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lrn3_btn3" />
 
     <Button
-        android:id="@+id/step5_main_btn"
+        android:id="@+id/lrn3_btn4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="Step5"
+        android:text="서비스 시작"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/step4_main_btn" />
+        app:layout_constraintTop_toBottomOf="@id/lrn3_edit4" />
 
     <Button
-        android:id="@+id/step6_main_btn"
+        android:id="@+id/lrn3_btn5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="Step6"
+        android:text="서비스 중지"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/step5_main_btn" />
+        app:layout_constraintTop_toBottomOf="@id/lrn3_btn4" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
