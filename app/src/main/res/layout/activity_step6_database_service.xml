@@ -9,25 +9,35 @@
         android:id="@+id/step6DatabaseServiceBtn1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="1. 테이블 생성" />
+        android:text="서비스 시작" />
 
     <Button
         android:id="@+id/step6DatabaseServiceBtn2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="2. 데이터 추가" />
+        android:text="서비스 정지" />
 
     <Button
         android:id="@+id/step6DatabaseServiceBtn3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="3. 데이터 조회" />
+        android:text="서비스 테스트" />
 
     <Button
         android:id="@+id/step6DatabaseServiceBtn4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Not yet Define" />
+        android:text="테이블 생성" />
 
+    <Button
+        android:id="@+id/step6DatabaseServiceBtn5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="데이터 조회" />
+
+    <TextView
+        android:id="@+id/step6DatabaseServiceText1"
+        android:layout_width="match_parent"
+        android:layout_height="300dp" />
 
 </LinearLayout>

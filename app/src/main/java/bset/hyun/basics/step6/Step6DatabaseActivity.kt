@@ -87,7 +87,7 @@ class Step6DatabaseActivity : AppCompatActivity() {
 
         if (database != null) {
             val sql: String =
-                "create table ${tableName} (_id integer PRIMARY KEY autoincrement, name text, age integer, mobile text)"
+                "create table if not exists ${tableName} (_id integer PRIMARY KEY autoincrement, name text, age integer, mobile text)"
             database!!.execSQL(sql)
 
             println("테이블 생성됨")
@@ -130,6 +130,8 @@ class Step6DatabaseActivity : AppCompatActivity() {
             // 자원이 한정되어 있기 때문에
             // cursor라고 하는 것도 실제 데이터베이스 저장소를 접근하기 때문에 웬만하면 마지막에 close를 꼭 해주셔야 합니다.
             cursor.close()
+        } else {
+            println("먼저 데이터베이스를 오픈하세요")
         }
     }
 
